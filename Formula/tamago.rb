@@ -1,26 +1,26 @@
 class Tamago < Formula
   desc "CLI terminal pet that grows with your shell activity"
   homepage "https://github.com/yagince/tamago"
-  version "0.7.1"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yagince/tamago/releases/download/v#{version}/tamago-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "4b0e44244f1ff7feb25a8c914a51ad8184d5f7e2d60a9788f25b8624c4dbedeb"
+      sha256 "1d0e0935d7bbccb0cdf409e54212e3181401fbeed927bdafe544ee96e4dcdacd"
     else
       url "https://github.com/yagince/tamago/releases/download/v#{version}/tamago-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "39ffac4cd140383a796fd048f5d85deccc0091e889ebc47426c5a246ba3ac6b6"
+      sha256 "33cd185568735d76c45c82c89c6b0b2b69ee00d12c2021102739577cb46b62ec"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/yagince/tamago/releases/download/v#{version}/tamago-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "42c68fabd301ef9bc11a2158c48fa63fee97968f2db6abd8fd917fdfcf6c5525"
+      sha256 "94df113aa6d827160b9a1032da0063610a5440f8940db2841947b254bb318180"
     else
       url "https://github.com/yagince/tamago/releases/download/v#{version}/tamago-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "61fbb59fd764e21f9486b916d59486c173d2b74ba58225d2d6f54ce302636eb4"
+      sha256 "b426f099507a316d772a971b8dfd48e6163fa309361e97dcacbd6c294c1a9660"
     end
   end
 
